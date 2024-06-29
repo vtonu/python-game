@@ -16,7 +16,7 @@ BALL_RADIUS = 15
 BALL_COLOR = (57, 255, 20)  # Neon green color
 BALL_SPEED = 5
 BALL_GROWTH_RATE = 0.1  # Growth rate per frame
-MAX_BALL_RADIUS = 60  # Maximum ball radius before showing "GOOD SHIT"
+MAX_BALL_RADIUS = 70  # Maximum ball radius before showing "GOOD SHIT"
 
 # Gravity settings
 GRAVITY = 0.5
