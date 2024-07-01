@@ -15,9 +15,6 @@ running = True
 current_lasers = INITIAL_LASERS
 anim = 0.0
 
-# Start playing background music
-pygame.mixer.music.play(-1)  # -1 loops indefinitely
-
 while running:
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
@@ -66,12 +63,9 @@ while running:
     else:
         # Clear the screen and show text
         screen.fill(BACKGROUND_COLOR)
-        text_surface = font.render('ChatGPT WILL TAKE YOUR JOB!', True, FRAME_COLOR)
+        text_surface = font.render('AI Will Take Your Job!', True, FRAME_COLOR)
         text_rect = text_surface.get_rect(center=(SCREEN_WIDTH // 2, SCREEN_HEIGHT // 2))
         screen.blit(text_surface, text_rect)
-        
-        # Stop playing background music
-        pygame.mixer.music.stop()
 
     # Update the display
     pygame.display.flip()

@@ -8,24 +8,24 @@ from math import sin
 pygame.init()
 
 # Screen settings
-SCREEN_WIDTH = 500
-SCREEN_HEIGHT = 200
+SCREEN_WIDTH = 800
+SCREEN_HEIGHT = 500
 BACKGROUND_COLOR = (0, 0, 0)
 FRAME_COLOR = (57, 255, 20)  # Neon green color
 
 # Ball settings
-BALL_RADIUS = 10
-BALL_SPEED = 1
+BALL_RADIUS = 1
+BALL_SPEED = 10
 BALL_GROWTH_RATE = 0.1  # Growth rate per frame
-MAX_BALL_RADIUS = 80  # Maximum ball radius before showing game over text
+MAX_BALL_RADIUS = 100  # Maximum ball radius before showing game over text
 BALL_COLOR = (0, 255, 0)  # Green color for the ball
 
 # Gravity settings
-GRAVITY = 0.1
+GRAVITY = 1
 
 # Laser settings
 INITIAL_LASERS = 0
-MAX_LASERS = 30
+MAX_LASERS = 10
 LASER_INCREMENT_THRESHOLD = 2  # Ball radius increase needed to add a new laser
 
 # Liquid effect settings
@@ -40,9 +40,6 @@ except FileNotFoundError:
     print("File liquid.bmp not found. Please make sure it is located in the 'data' directory.")
     liquid_bitmap = pygame.Surface((20, 20))
     liquid_bitmap.fill(FRAME_COLOR)  # Fill with the same neon green color
-
-# Load background music
-pygame.mixer.music.load(os.path.join(main_dir, "data", "background.mp3"))
 
 # Create the screen
 screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
