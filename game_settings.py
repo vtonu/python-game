@@ -14,19 +14,18 @@ BACKGROUND_COLOR = (0, 0, 0)
 FRAME_COLOR = (57, 255, 20)  # Neon green color
 
 # Ball settings
-BALL_RADIUS = 1
-BALL_SPEED = 10
-BALL_GROWTH_RATE = 0.1  # Growth rate per frame
-MAX_BALL_RADIUS = 100  # Maximum ball radius before showing game over text
+BALL_RADIUS = 5
+BALL_SPEED = 1
+BALL_GROWTH_RATE = 0.01  # Growth rate per frame
+MAX_BALL_RADIUS = 10  # Maximum ball radius before showing game over text
 BALL_COLOR = (0, 255, 0)  # Green color for the ball
 
 # Gravity settings
-GRAVITY = 1
+GRAVITY = 0.8
 
 # Laser settings
 INITIAL_LASERS = 0
-MAX_LASERS = 10
-LASER_INCREMENT_THRESHOLD = 2  # Ball radius increase needed to add a new laser
+MAX_LASERS = 100
 
 # Liquid effect settings
 main_dir = os.path.split(os.path.abspath(__file__))[0]
