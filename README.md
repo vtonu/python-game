@@ -1,4 +1,4 @@
 # python-game
 
-🟢 Python Graphics Pygame (v0.4)
-<img width="586" alt="demo" src="https://github.com/vtonu/python-game/assets/56773210/276f240d-ba37-4e6c-8a9b-115b43e9e95a">
+🟢 Python Graphics Pygame (v0.5)
+<img width="818" alt="game screenshot" src="https://github.com/vtonu/python-game/assets/56773210/15a6c1dd-6ac3-4f87-b2ef-2a8fa0b6ea51">
