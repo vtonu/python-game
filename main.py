@@ -11,7 +11,7 @@ from game_settings import (
 
 def draw_button(screen, text, x, y, width, height, border_color, text_color):
     pygame.draw.rect(screen, border_color, (x, y, width, height), 3)
-    button_font = pygame.font.SysFont('Arial', 18)  # Use a smaller font size
+    button_font = pygame.font.SysFont('Arial', 18)  # 
     text_surface = button_font.render(text, True, text_color)
     text_rect = text_surface.get_rect(center=(x + width // 2, y + height // 2))
     screen.blit(text_surface, text_rect)
@@ -31,8 +31,8 @@ def reset_game():
 # Main loop
 running = True
 current_lasers = INITIAL_LASERS
+ball_radius = BALL_RADIUS  
 anim = 0.0
-ball_radius = BALL_RADIUS  # Local variable for ball radius
 
 while running:
     for event in pygame.event.get():

@@ -11,7 +11,7 @@ pygame.init()
 SCREEN_WIDTH = 900
 SCREEN_HEIGHT = 500
 BACKGROUND_COLOR = (0, 0, 0)
-FRAME_COLOR = (57, 255, 20)  # Neon green color
+FRAME_COLOR = (57, 255, 20)  # Green
 
 # Ball settings
 BALL_RADIUS = 0.9
@@ -55,11 +55,11 @@ def draw_ball_and_lasers(screen, x, y, radius, num_lasers):
         angle = 2 * math.pi * i / num_lasers
 
         # Calculate end point coordinates for blue lasers
-        end_x_blue = x + math.cos(angle) * radius * 1.7  # Adjust multiplier as needed
-        end_y_blue = y + math.sin(angle) * radius * 1.7  # Adjust multiplier as needed
+        end_x_blue = x + math.cos(angle) * radius * 1.5 
+        end_y_blue = y + math.sin(angle) * radius * 1.5  
         pygame.draw.line(screen, (0, 0, 255), (x, y), (int(end_x_blue), int(end_y_blue)))
 
         # Calculate end point coordinates for green lasers (twice the length of blue lasers)
-        end_x_green = x + math.cos(angle) * radius * 3
-        end_y_green = y + math.sin(angle) * radius * 3
+        end_x_green = x + math.cos(angle) * radius * 5
+        end_y_green = y + math.sin(angle) * radius * 5
         pygame.draw.line(screen, (0, 255, 0), (x, y), (int(end_x_green), int(end_y_green)))
